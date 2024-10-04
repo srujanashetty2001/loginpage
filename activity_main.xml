@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Back Button -->
+    <TextView
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="&#8249; Your Profile"
+        android:textSize="18sp"
+        android:textColor="#000000" />
+
+    <!-- Profile Picture -->
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@android:drawable/ic_menu_camera"
+        android:contentDescription="Profile Image"
+        android:layout_marginTop="16dp" />
+
+    <!-- Add Icon for choosing an image -->
+    <ImageView
+        android:id="@+id/add_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@android:drawable/ic_input_add"
+        android:contentDescription="Add Profile Picture"
+        android:layout_gravity="center"
+        android:layout_marginTop="-24dp"
+        android:layout_marginLeft="80dp" />
+
+    <!-- First Name (Required) -->
+    <EditText
+        android:id="@+id/first_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First Name (Required)"
+        android:inputType="textPersonName"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/black" />
+
+    <!-- Last Name (Optional) -->
+    <EditText
+        android:id="@+id/last_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Last Name (Optional)"
+        android:inputType="textPersonName"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/black" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Save"
+        android:layout_marginTop="24dp" />
+
+</LinearLayout>
